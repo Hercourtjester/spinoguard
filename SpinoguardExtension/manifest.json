@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "SpinoGuard Redirector",
+  "version": "1.0",
+  "description": "Redirects adult content searches to a wholesome dino page.",
+  "permissions": ["tabs", "webNavigation", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "spinoguard.html"
+  }
+}
