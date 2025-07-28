@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "SpinoGuard",
+  "version": "1.0",
+  "description": "Redirects unwanted searches to a spinosaurus of strength.",
+  "permissions": ["tabs", "webRequest", "webRequestBlocking", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "SpinoGuard"
+  }
+}
