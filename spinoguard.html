@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SpinoGuard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+    }
+    #encouragement {
+      margin-top: 20px;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #ffd700;
+    }
+    #spinoImage {
+      margin-top: 30px;
+      max-width: 90%;
+      border: 5px solid #555;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #333;
+    }
+    #caption {
+      margin-top: 10px;
+      font-style: italic;
+      font-size: 1.3em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>What are you searching for?</h1>
+  <input type="text" id="searchInput" placeholder="Type here..." />
+  <button onclick="checkInput()">Search</button>
+
+  <div id="output" style="display: none;">
+    <p id="encouragement">You're stronger than your urges.</p>
+    <img id="spinoImage" src="https://www.shutterstock.com/image-illustration/spinosaurus-tropical-storm-260nw-393674218.jpg" alt="Spinosaurus" />
+    <div id="caption">Stay strong, warrior. 🦖</div>
+    <audio id="rockAudio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" autoplay loop></audio>
+  </div>
+
+  <script>
+    function checkInput() {
+      const forbiddenWords = ['porn', 'sex', 'nsfw', 'xxx'];
+      const userInput = document.getElementById('searchInput').value.toLowerCase();
+      
+      if (forbiddenWords.some(word => userInput.includes(word))) {
+        document.getElementById('output').style.display = 'block';
+        document.getElementById('rockAudio').play();
+      } else {
+        alert("Try something healthier, champ.");
+      }
+    }
+  </script>
+</body>
+</html>
