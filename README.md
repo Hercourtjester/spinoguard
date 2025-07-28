@@ -2,6 +2,7 @@
 Welcome to SpinoGuard!
 Psych Student here, just wanted to make a funny take on porn addiction, idk even know if it works on mobile but it works on computers with dev mode on extension
 Its basically delayed gratification in a more psychological perspective
+AI was a huge help with this crude project and I learned something
 To install:
 1. Extract this folder
 2. Go to opera://extensions
